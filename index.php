@@ -1,47 +1,33 @@
-<!DOCTYPE html>
-<html lang="cs">
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="" />
-		<meta name="robots" content="index,follow" />
+<?php require_once '_header.php'; ?>
 
-		<link href="./styles/style.css" rel="stylesheet" media="screen" />
-		<link href="./styles/print.css" rel="stylesheet" media="print" />
-		
-		<!--[if lt IE 9]>
-			<script src="./scripts/html5shiv.js"></script>
-		<![endif]-->
+<main>
+	<div class="homepage">
+		<div class="wrap">
+			<div class="inner">
+				<div class="column">
+					<div class="columnInner">
+						<h2>Our Life</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui felis, rutrum in eleifend sit amet, imperdiet et diam. Proin vitae ullamcorper nulla. Ut eget erat nunc. Nam consectetur eros ac ex semper scelerisque.</p>
+						<a href="#">View Gallery</a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="columnInner">
+						<h2>Our Farm</h2>
+						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vitae urna ultrices, congue purus vitae, porta erat. Phasellus nec lacus fermentum, consequat risus at, volutpat urna.</p>
+						<a href="#">Learn More</a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="columnInner">
+						<h2>Our Horses</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui felis, rutrum in eleifend sit amet, imperdiet et diam. Proin vitae ullamcorper nulla. Ut eget erat nunc. Nam consectetur eros ac ex semper scelerisque.</p>
+						<a href="#">View Horses</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 
-		<script src="./scripts/jquery.js"></script>
-		
-		<script src="./kptoolbar/kptoolbar.js"></script>
-		
-		<script src="./scripts/main.js"></script>
-		
-	</head>
-	<body>
-		
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<main>
-			
-		</main>
-		
-		<footer>
-			
-		</footer>
-		
-	</body>
-</html>
+<?php require_once '_footer.php';
