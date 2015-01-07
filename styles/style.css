@@ -320,3 +320,27 @@ body {
     text-decoration: underline; }
     .formattedContent a:hover {
       text-decoration: none; }
+
+.events {
+  max-width: 1056px;
+  margin: 0 auto -28px;
+  padding-top: 45px; }
+  .events .event {
+    *zoom: 1;
+    padding: 24px 20px 28px 16px; }
+    .events .event:before, .events .event:after {
+      content: "";
+      display: table; }
+    .events .event:after {
+      clear: both; }
+    .events .event + .event {
+      background: url("./images/dashed-line.png") repeat-x 50% 0; }
+    .events .event img {
+      float: left;
+      margin-right: 42px; }
+    .events .event p {
+      color: #68614f;
+      font-size: 1.8em;
+      line-height: 1.556;
+      padding-top: 15px;
+      margin-left: 364px; }
