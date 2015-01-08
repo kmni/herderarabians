@@ -30,3 +30,79 @@ i, em{
 a{
 	color: inherit;
 }
+
+input,
+button,
+textarea,
+select{
+	font-family: inherit;
+}
+
+input[type="submit"],
+button{
+	cursor: pointer;
+}
+
+.clear{
+	clear: both;
+}
+ 
+.jcarousel-wrapper{
+	position: relative;
+}
+
+.jcarousel{
+    position: relative;
+    overflow: hidden;
+	
+	ul{
+		width: 20000em;
+		position: relative;
+	}
+	
+	li{
+		float: left;
+	}
+	
+	&.vertical{
+		
+		ul{
+			height: 20000em;
+		}
+		
+		li{
+			float: none;
+		}
+	}
+}
+
+.jcarousel-control-next,
+.jcarousel-control-prev{
+	@include size(47px, 100%);
+	background-color: #362b20;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	transition: background-color .2s;
+	cursor: pointer;
+	transition-property: opacity, background-color;
+	transition-duration: .2s;
+
+	&:hover{
+		background-color: #453729;
+	}
+	
+	&.inactive{
+		opacity: .3;
+		cursor: default;
+	}
+}
+
+.jcarousel-control-prev{
+	float: left;
+	@include bgImg('arrow-left-light.png');
+}
+
+.jcarousel-control-next{
+	float: right;
+	@include bgImg('arrow-right-light.png');
+} 

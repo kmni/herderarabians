@@ -16,6 +16,7 @@
 		<![endif]-->
 
 		<script src="./scripts/jquery.js"></script>
+		<script src="./scripts/jquery.jcarousel.js"></script>
 		
 		<script src="./kptoolbar/kptoolbar.js"></script>
 		
