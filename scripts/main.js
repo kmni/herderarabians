@@ -145,8 +145,7 @@ $(function() {
 	
 	//click on preview
 	$previews.click(function() {
-		var $this = $(this),
-			id = $previews.index(this);
+		var id = $previews.index(this);
 		
 		if (id === index) { //if clicked on active image
 			return;
@@ -205,6 +204,59 @@ $(function() {
 //	}
 //	
 //	autoslide();
+}());
+
+//
+// magnific popup
+//
+(function() {
+	//photos
+	$(".horses .horse .photos").each(function() {
+		var $this = $(this),
+			photos = [ ],
+			$items = $this.parent().parent().children(".photosBox").children("img");
+
+		$items.each(function() {
+			photos.push({ src: this.src, type: "image" });
+		});
+
+		$this.magnificPopup({
+			type: "image",
+			items: photos,
+			showCloseBtn: true,
+			gallery: {
+				enabled: true
+			}
+		});
+	});
+	
+	//pedigree
+	$(".horses .horse .pedigree").each(function() {
+		var $this = $(this),
+			$box = $this.parent().parent().children(".pedigreeBox");
+
+		$this.magnificPopup({
+			type: "inline",
+			items: {
+				src: $box
+			},
+			showCloseBtn: true
+		});
+	});
+	
+	//pedigree
+	$(".horses .horse .video").each(function() {
+		var $this = $(this),
+			$box = $this.parent().parent().children(".videoBox");
+
+		$this.magnificPopup({
+			type: "inline",
+			items: {
+				src: $box
+			},
+			showCloseBtn: true
+		});
+	});
 }());
 
 });

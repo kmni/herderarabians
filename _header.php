@@ -17,6 +17,7 @@
 
 		<script src="./scripts/jquery.js"></script>
 		<script src="./scripts/jquery.jcarousel.js"></script>
+		<script src="./scripts/jquery.magnific-popup.min.js"></script>
 		
 		<script src="./kptoolbar/kptoolbar.js"></script>
 		

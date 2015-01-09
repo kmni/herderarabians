@@ -548,3 +548,215 @@ body{
 		}
 	}
 }
+
+.horses{
+	padding-top: 35px;
+	
+	.inner{
+		max-width: 1059px;
+	}
+	
+	.legend{
+		@include clear();
+		text-align: right;
+		margin-bottom: 21px;
+		
+		.type{
+			display: inline-block;
+			position: relative;
+			padding-left: 27px;
+			font-size: 1.4em;
+			color: #3a3025;
+			text-transform: uppercase;
+			margin-left: 30px;
+			
+			&:before{
+				content: '';
+				@include size(16px, 16px);
+				border: 1px solid #3a3025;
+				border-radius: 50%;
+				@include abs(0, 1px);
+			}
+			
+			&.mare:before{
+				background-color: #d8cfb6;
+			}
+			
+			&.gelding:before{
+				background-color: #4c3f30;
+			}
+		}
+	}
+	
+	.list{
+		@include clear();
+	}
+	
+	.horse{
+		width: 32.2%;
+		float: left;
+		margin: 0 0.56%;
+		
+		&:nth-of-type(n){
+			margin-left: 0;
+			margin-right: 1.7%;
+		}
+		
+		&:nth-of-type(3n){
+			margin-right: 0;
+		}
+		
+		img{
+			width: 100%;
+			display: block;
+		}
+		
+		.info{
+			text-align: center;
+			padding: 12px 10px 10px;
+			position: relative;
+			
+			h2{
+				font-size: 2.4em;
+				text-transform: uppercase;
+			}
+			
+			p{
+				font-size: 1.2em;
+				line-height: 1.5;
+			}
+			
+			.photos{
+				@include abs(50%, -35px);
+				border-radius: 35px 35px 0 0;
+				@include size(70px, 35px);
+				margin-left: -35px;
+				background-position: 50% 12px;
+				background-repeat: no-repeat;
+			}
+		}
+		
+		.buttons{
+			padding-top: 12px;
+			color: #3a3025;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			
+			&.oneButton{
+				text-align: center;
+			}
+			
+			&.twoButtons{
+				@include clear();
+				padding-left: 6px;
+				padding-right: 6px;
+				
+				.pedigree{
+					float: left;
+				}
+				
+				.video{
+					float: right;
+				}
+			}
+			
+			span{
+				display: inline-block;
+				cursor: pointer;
+				
+				&:hover{
+					text-decoration: underline;
+				}
+				
+				&.pedigree{
+					padding-left: 25px;
+					@include bg('ico-loupe.png', 0 50%);
+				}
+				
+				&.video{
+					padding-left: 22px;
+					@include bg('ico-video.png', 0 50%);
+				}
+			}
+		}
+		
+		&.gelding{
+			
+			.info{
+				color: #d8cfb6;
+				background-color: #3a3025;
+				
+				.photos{
+					background-color: #3a3025;
+					@include bgImg('ico-photo-light.png');
+				}
+			}
+		}
+		
+		&.mare{
+			
+			.info{
+				color: #3a3025;
+				background-color: #d8cfb6;
+				
+				.photos{
+					background-color: #d8cfb6;
+					@include bgImg('ico-photo-dark.png');
+				}
+			}
+		}
+		
+		.photosBox{
+			display: none;
+		}
+	}
+	
+	.line{
+		display: block;
+		clear: both;
+		width: 100%;
+		height: 26px;
+		@include bg('dashed-line.png', 50% 50%, repeat-x);
+	}
+}
+
+.popupBox{
+	max-width: 600px;
+	background: #c1b597;
+	margin: 0 auto;
+	position: relative;
+	padding: 30px;
+}
+
+.mfp-container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.mfp-close-btn-in .mfp-close{
+	color: #3a3025;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.pedigreeBox{
+	font-size: 1.4em;
+	
+	table{
+		width: 100%;
+
+		td{
+			vertical-align: middle;
+			padding: 8px 5px;
+			border: 1px solid #3a3025;
+		}
+	}
+}
+
+.videoBox{
+	
+	iframe{
+		max-width: 100%;
+	}
+}
