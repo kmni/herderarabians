@@ -18,9 +18,6 @@
 		<script src="./scripts/jquery.js"></script>
 		<script src="./scripts/jquery.jcarousel.js"></script>
 		<script src="./scripts/jquery.magnific-popup.min.js"></script>
-		
-		<script src="./kptoolbar/kptoolbar.js"></script>
-		
 		<script src="./scripts/main.js"></script>
 		
 	</head>
@@ -48,6 +45,7 @@
 						<li><a href="#">Contast Us</a></li>
 					</ul>
 				</nav>
+				<div class="menuOpener"></div>
 			</div>
 		</header>
 		

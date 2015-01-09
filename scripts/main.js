@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+var $doc = $(document),
+	$window = $(window),
+	homepage = $("body").hasClass("homepage"),
+	mobile = false,
+	ajaxSupported = false;
+
+if ($doc.width() <= 768) {
+	mobile = true;
+}
+
 //
 //carousel
 //
@@ -258,5 +268,42 @@ $(function() {
 		});
 	});
 }());
+
+//
+// mobile menu
+//
+(function() {
+	var $opener = $(".menuOpener"),
+		$menu = $(".pageHeader .pageMenu"),
+		mobile = false,
+		wasMobile = false;
+	
+	$window.resize(function() {
+		if ($(window).width() <= 768) {
+			mobile = true;
+		} else {
+			mobile = false;
+		}
+		
+		if (mobile !== wasMobile) {
+			if (mobile) {
+				$menu.hide();
+			} else {
+				$menu.show();
+			}
+			
+			wasMobile = mobile;
+		}
+	}).resize();
+	
+	$opener.click(function() {
+		if ($menu.is(":visible")) {
+			$menu.slideUp(200);
+		} else {
+			$menu.slideDown(200);
+		}
+	});
+}());
+ 
 
 });

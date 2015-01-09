@@ -130,6 +130,7 @@
 						</table>
 					</div>
 				</div>
+				<span class="line line2"></span>
 				<div class="horse mare">
 					<img src="images/horse1.jpg" alt="" />
 					<div class="info">
@@ -192,7 +193,7 @@
 						<iframe width="540" height="304" src="//www.youtube.com/embed/GPMXt63IgZM"></iframe>
 					</div>
 				</div>
-				<span class="line"></span>
+				<span class="line line3"></span>
 				<div class="horse gelding">
 					<img src="images/horse1.jpg" alt="" />
 					<div class="info">
@@ -252,6 +253,7 @@
 						</table>
 					</div>
 				</div>
+				<span class="line line2"></span>
 				<div class="horse gelding">
 					<img src="images/horse2.jpg" alt="" />
 					<div class="info">
@@ -373,7 +375,8 @@
 						<iframe width="540" height="304" src="//www.youtube.com/embed/GPMXt63IgZM"></iframe>
 					</div>
 				</div>
-				<span class="line"></span>
+				<span class="line line3"></span>
+				<span class="line line2"></span>
 				<div class="horse gelding">
 					<img src="images/horse1.jpg" alt="" />
 					<div class="info">

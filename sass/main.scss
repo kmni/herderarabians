@@ -120,10 +120,18 @@ body{
 	}
 }
 
+.menuOpener{
+	display: none;
+	@include absR(10px, 0);
+	@include size(37px, 37px);
+	@include bg('ico-hamburger.png', 50% 50%);
+	cursor: pointer;
+}
+
 .pageMotto{
 	
 	.inner{
-		height: 346px;
+		//height: 346px;
 		padding-top: 317px;
 		
 		&:after{
@@ -251,6 +259,7 @@ body{
 	}
 	
 	.footerMenu{
+		display: table-cell;
 		width: 2%;
 		white-space: nowrap;
 		
@@ -325,7 +334,10 @@ body{
 		margin: 35px 0;
 		
 		&.fullwidth{
-			max-width: 100%;
+			
+			img{
+				max-width: 100%;
+			}
 		}
 		
 		&.transparent{
@@ -364,7 +376,7 @@ body{
 		
 		img{
 			float: left;
-			margin-right: 42px;
+			max-width: 307px;
 		}
 		
 		p{
@@ -435,11 +447,14 @@ body{
 				position: absolute;
 				top: 0;
 				left: 0;
+				z-index: 3;
 				width: 100%;
 				height: 100%;
 				background: #000;
 				opacity: .5;
 				transition: opacity .5s;
+				
+				display: none\9;
 			}
 			
 			&.leftBack{
@@ -497,11 +512,15 @@ body{
 			img{
 				display: block;
 				position: absolute;
+				z-index: 2;
 				left: 50%;
 				top: 50%;
 				transform: translateX(-50%) translateY(-50%);
 				-webkit-transform: translateX(-50%) translateY(-50%);
 				-ms-transform: translateX(-50%) translateY(-50%);
+				
+				left: 0px\9;
+				top: 0px\9;
 			}
 		}
 	}
@@ -535,6 +554,8 @@ body{
 				background: #000;
 				opacity: .5;
 				transition: opacity .5s;
+				
+				display: none\9;
 			}
 			
 			&.active:after{
@@ -717,6 +738,10 @@ body{
 		width: 100%;
 		height: 26px;
 		@include bg('dashed-line.png', 50% 50%, repeat-x);
+		
+		&.line2{
+			display: none;
+		}
 	}
 }
 
